@@ -1,6 +1,9 @@
 #include <iostream>
+#include "arena.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+	Arena arena{};
+	arena.load_fights("peleas.txt");
+	arena.run();
     return 0;
 }
